@@ -1,0 +1,7 @@
+﻿window.showModalDialog_bak = window.showModalDialog;
+window.showModalDialog = function(url, arg, opt, flag) {
+	//that.error_msg = null;
+	//that.check_data = arg;
+	window.showModalDialog_bak(url, arg, opt, flag);
+	console.log(url, arg, opt, flag);
+};
